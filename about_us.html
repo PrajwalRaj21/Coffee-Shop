@@ -12,17 +12,31 @@
         color: #333;
       }
       header {
-        background-color: #333;
-        color: white;
-        padding: 50px;
-        text-align: center;
-      }
-      h1 {
-        margin: 0;
-        font-size: 48px;
-        text-transform: uppercase;
-        letter-spacing: 8px;
-      }
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
       section {
         padding: 50px;
         text-align: center;
@@ -56,14 +70,32 @@
         font-size: 24px;
         margin-bottom: 50px;
         color: #8B4513;
+        align-items: center;
+        text-align: center;
       }
+
+      footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
     </style>
   </head>
   <body>
     <header>
       <h1>About Us</h1>
+      <nav>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
-    <section>
+
       <h2>Our Story</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at sapien vel tellus dapibus sodales. Vivamus consectetur sem vel odio bibendum, eu semper est consequat. Nulla facilisi. Maecenas varius commodo neque, ac pulvinar risus vestibulum eu.
@@ -83,5 +115,12 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at sapien vel tellus dapibus sodales. Vivamus consectetur sem vel odio bibendum, eu semper est consequat. Nulla facilisi. Maecenas varius commodo neque, ac pulvinar risus vestibulum eu.
       </p>
     </section>
+
+
   </body>
+
+  <footer>
+    <p>&copy; 2023 Coffee Shop</p>
+  </footer>
+    
 </html>

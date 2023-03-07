@@ -1,169 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coffee Shop</title>
-</head>
 <html>
 <head>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
     }
-
     .container {
-      max-width: 1200px;
+      max-width: 800px;
       margin: 0 auto;
     }
-
-    .navbar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background-color: #333333;
-      color: white;
-      padding: 10px 20px;
+    .logo {
+      text-align: center;
+      font-size: 48px;
+      color: #333333;
     }
-
-    .navbar-logo {
-      font-size: 24px;
+    .nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 20px 0;
+    }
+    .nav a {
+      text-decoration: none;
+      color: #333333;
       font-weight: bold;
     }
-
-    .navbar-menu {
-      display: flex;
-      list-style-type: none;
+    .nav a:hover {
+      color: #999999;
     }
-
-    .navbar-menu li {
-      margin-left: 20px;
-    }
-
-    .navbar-menu li a {
-      color: white;
-      text-decoration: none;
-    }
-
-    .banner {
-      height: 500px;
-      background-image: url("https://th.bing.com/th/id/R.515144a925559278bfcca0cd8e3338fd?rik=DM2wUVz%2b%2bdZnDQ&pid=ImgRaw&r=0");
+    .hero {
+      height: 400px;
+      background-image: url("https://th.bing.com/th/id/R.855bc264b916e8511010726ea05d7560?rik=yBf3p1wTq4vohQ&pid=ImgRaw&r=0");
       background-size: cover;
-      background-position: center center; 
-      
-      
-     }
-    
-     .banner-text {
-       display:flex; 
-       flex-direction : column; 
-       align-items : center; 
-       justify-content : center; 
-       height :100%; 
-       color:white;
-       
-     }
-    
-     .banner-text h1{
-       font-size :48px; 
-       margin-bottom :20px; 
-       
-       
-       
-     }
-    
-     .banner-text p{
-       font-size :24px; 
-       margin-bottom :40px; 
-       
-       
-     }
-    
-     .banner-text button{
-       padding :15px 25px; 
-       border:none ; 
-       background-color:#FFC107 ;  
-       color:black ;  
-       font-weight:bold ;  
-       
-       
-     }
-    
-     .about{
-        display:flex ;  
-        align-items:center ;  
-        justify-content:center ;  
-        padding :15px 0px ; 
-        
-         
-         }
-        
-         .about-image{
-           width :50% ; 
-
-         }
-        
-         .about-image img{
-           width :100% ; 
-
-         }
-        
-         .about-text{
-           width :50% ; 
-            
-             padding-left :50px ;
-             font-family:sans-serif ;
-             line-height :1.5 ;
-  
-         }
-        
-         .about-text h2{
-           font-size :36px ;
-            margin-bottom :20px ;
-
-         }
-        
-         </style>
+      background-position: center;
+    }
+    .hero h1 {
+      color: white;
+      font-size: 64px;
+      text-align: center;
+      padding-top: 150px;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      color: #333333;
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+    .content p {
+      color: #666666;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+    .footer {
+      background-color: #333333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
-
 <body>
   <div class="container">
-    <div class="navbar">
-        <div class="navbar-logo">Coffee Shop</div>
-        <ul class="navbar-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-   </div>
-
-   <div class="banner">
-        <div class="banner-text">
-          <h1>Welcome to Coffee Shop</h1>
-          <p>The best place to enjoy your favorite coffee</p>
-          <button>Order Now</button>
-        </div>   
-   </div>
-
-   <div class="about">
-        <div class="about-image">
-          <img src="https://th.bing.com/th/id/R.e062195e4c6239d50af738ee8d7a81d4?rik=SXh8DHqC5KenLQ&pid=ImgRaw&r=0" alt="Coffee About Image"/>
-        </div>   
-        <div class="about-text">
-          <h2>About Us</h2>
-         <p>Welcome to our cozy little coffee shop! We're passionate about providing our customers with the best possible coffee experience. From our freshly roasted beans to our expertly crafted drinks, we're committed to delivering quality and satisfaction with every cup.</p>
-         <p>Our welcoming atmosphere is the perfect spot to catch up with friends, get some work done, or just sit back and relax with a book. We believe in creating a sense of community, where everyone feels welcome and comfortable.</p>
-         <p>We also pride ourselves on offering a variety of tasty treats to pair with your coffee, including pastries, sandwiches, and more. Come visit us and taste the difference for yourself!</p>
-
-        </div>   
-   </div>
+    <div class="logo">
+      <h1>Coffee Shop</h1>
+    </div>
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">Menu</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+    <div class="hero">
+      <h1>Welcome to Coffee Shop</h1>
+    </div>
+    <div class="content">
+      <h2>Our Story</h2>
+      <p>We are a family-owned coffee shop that serves the best coffee in town. We use only the finest beans and roast them to perfection. We also offer a variety of pastries, sandwiches, and salads to satisfy your hunger. Whether you need a quick breakfast, a relaxing lunch, or a cozy afternoon, we are here to make your day better.</p>
+      <h2>Our Services</h2>
+      <p>We offer free Wi-Fi, comfortable seating, and friendly staff. You can also order online and pick up your coffee at our drive-thru window. We also cater for events and parties, so feel free to contact us for more information. We look forward to serving you soon.</p>
+    </div>
+    <div class="footer">
+      <p>&copy; 2023 Coffee Shop. All rights reserved.</p>
+    </div>
   </div>
-</body>
-</html>
-<body>
-  
 </body>
 </html>

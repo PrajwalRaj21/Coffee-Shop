@@ -10,6 +10,35 @@
 			background-color: #f6f6f6;
 		}
 
+		header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 35px;
+  color: #f6f6f6;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
 		h1 {
 			text-align: center;
 			margin-top: 50px;
@@ -62,8 +91,28 @@
 		.container button:hover {
 			background-color: #555;
 		}
+
+		footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 20px;
+}
+
 	</style>
 </head>
+
+<header>
+	<h1>Menu</h1>
+	<nav>
+	  <ul>
+		<li><a href="home.html">Home</a></li>
+		<li><a href="menu.html">Menu</a></li>
+		<li><a href="about.html">About Us</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+	  </ul>
+	</nav>
+  </header>
 <body>
 	<h1>Coffee Shop Menu</h1>
 	<div class="container">
@@ -95,5 +144,9 @@
         <button>Add to Cart</button>
     </div>
 </body>
+
+<footer>
+	<p>&copy; 2023 Coffee Shop</p>
+  </footer>
 </html>
 	
